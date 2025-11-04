@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      margin: 0;
+    }
+    .hero {
+      background-color: rgb(201, 114, 0);
+      display: flex;
+      justify-content: space-around;
+      padding: 40px;
+      gap: 20px;
+    }
+    .details > h1 {
+      color: white;
+    }
+    .details {
+      max-width: 360px;
+    }
+    .hero > img {
+      width: 200px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 800px) {
+      .details > h1 {
+        color: yellow;
+      }
+    }
+    @media (max-width: 600px) {
+      .hero {
+        flex-direction: column;
+        align-items: center;
+      }
+      .details > h1 {
+        color: green;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero"> 
+    <div class="details">
+      <h1>Welcome to JAVA Class</h1>
+      <p style="font-size: small;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nobis at ab consectetur id ex vero quisquam impedit ullam amet itaque voluptatum soluta, perspiciatis culpa dolorem et sed. Aut, fugit!</p>
+    
+      <div>
+        <button>Register</button>
+        <button>Learn more</button>
+      </div>
+    </div>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCSWaJpaadL3-uDgko0SqhmWCLxkG2OxHKFw&s" alt="">
+  </section>
+</body>
+</html>
