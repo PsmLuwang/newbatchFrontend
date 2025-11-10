@@ -32,7 +32,7 @@
   </nav>
 
   <!-- mobile nav bar -->
-  <section id="sideBar" class="text-white/80 sm:hidden flex flex-col bg-slate-900 w-60 p-4 absolute top-18 right-2 rounded-[8px] gap-5 hover:shadow-xl hover:-translate-y-1 transition-all duration-[0.5s] shadow-violet-600">
+  <section id="sideBar" class="text-white/80 sm:hidden hidden flex flex-col bg-slate-900 w-60 p-4 absolute top-18 right-2 rounded-[8px] gap-5 hover:shadow-xl hover:-translate-y-1 transition-all duration-[0.5s] shadow-violet-600">
     <a href="#" class="hover:bg-violet-600 p-2 rounded-[4px] flex items-center gap-2">
       <i class="fa-solid fa-house"></i> Home
     </a>
@@ -55,6 +55,136 @@
   </section>
 
 
+  <!-- hero section -->
+  <section class="flex items-center justify-evenly gap-4 p-5 bg-violet-500/15 aspect-[4/2] w-full max-h-100">
+    <div class="max-w-140">
+      <h1 class="text-[30px] font-extrabold text-white/80">
+        <span class="text-violet-500">Welcome</span> to <br> Kripa <span class="text-violet-500">Store</span>
+      </h1>
+      <p class="text-gray-400 text-[14px] my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, facere! Dolorum inventore magnam ea doloremque,  exercitationem.</p>
+      <button class="bg-violet-600 h-8 w-26 text-[14px] mr-1">Get Start</button>
+      <button class="text-violet-600 border-[2px] border-violet-600 h-8 w-26 text-[14px]">Learn more</button>
+    </div>
+
+    <img 
+      class="w-80 h-60 rounded-xl max-sm:hidden"
+      src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?semt=ais_hybrid&w=740&q=80" 
+      alt=""
+    >
+  </section>
+  
+
+  <!-- Product section -->
+  <section class="mt-10">
+    <h1 class="text-center text-white/80 text-[22px] my-5 font-semibold">Top Selling Products</h1>
+
+    <div class="grid grid-cols-4 max-md:grid-cols-2 gap-3 p-5 max-w-260 m-auto">
+      <div class="bg-slate-700">
+        <img class="w-full" src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+        
+        <div class="p-3">
+          <h1 class="text-white/80 text-[18px] font-semibold">Product A</h1>
+          <p class="text-gray-400 text-[14px]">Lorem ipsum dolor sit amet Laborum incidunt praesentium beatae dolor sit amet Laborum incidunt.</p>
+        </div>
+      </div>
+      
+      <div class="bg-slate-700">
+        <img class="w-full" src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+        
+        <div class="p-3">
+          <h1 class="text-white/80 text-[18px] font-semibold">Product A</h1>
+          <p class="text-gray-400 text-[14px]">Lorem ipsum dolor sit amet Laborum incidunt praesentium beatae dolor sit amet Laborum incidunt.</p>
+        </div>
+      </div>
+      
+      <div class="bg-slate-700">
+        <img class="w-full" src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+        
+        <div class="p-3">
+          <h1 class="text-white/80 text-[18px] font-semibold">Product A</h1>
+          <p class="text-gray-400 text-[14px]">Lorem ipsum dolor sit amet Laborum incidunt praesentium beatae dolor sit amet Laborum incidunt.</p>
+        </div>
+      </div>
+      
+      <div class="bg-slate-700">
+        <img class="w-full" src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+        
+        <div class="p-3">
+          <h1 class="text-white/80 text-[18px] font-semibold">Product A</h1>
+          <p class="text-gray-400 text-[14px]">Lorem ipsum dolor sit amet Laborum incidunt praesentium beatae dolor sit amet Laborum incidunt.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Services section -->
+  <section class="mt-10">
+    
+    <div class="flex justify-evenly p-4 gap-3 my-10 py-16 bg-linear-to-r from-violet-500/15 to-violet-700/70">
+      <div class="">
+        <h1 class="text-white/80 font-semibold">Services</h1>
+        <h1 class="text-white/80 font-extrabold text-[36px]">What <span class="text-violet-500">Services</span> <br> We're Offering</h1>
+      </div>
+
+      <div>
+        <p class="text-white/80 text-[14px] text-justify mt-4 max-w-100">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsam blanditiis qui non fuga tempora velit veniam aliquid repellendus ea. Nesciunt unde quas fugiat voluptates id blanditiis optio eum quia.
+          Officiis rem. Similique laboriosam aliquid aut doloremque iusto. Nobis earum doloribus tempora voluptatem numquam officiis.
+        </p>
+      </div>
+    </div>
+
+    <div class="p-4 flex flex-col gap-20">
+
+      <div class="flex flex-row-reverse max-sm:flex-col items-center justify-evenly gap-3">
+        <div class="flex items-center">
+          <img class="max-w-80 max-md:w-70 max-sm:max-w-80 aspect-[3/2] object-cover rounded-xl" src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+        </div>
+      
+        <div class="max-w-160">
+          <h1 class="text-white/80 text-[28px] font-bold">
+            <span class="text-violet-500">Web</span> Development
+          </h1>
+          <p class="text-gray-400 text-[15px] text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere provident placeat quo earum voluptates dolores ipsum. Placeat hic animi, non pariatur optio dolorem tempora accusantium maiores. Quis numquam quasi velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sequi hic aspernatur eaque nostrum facere ex nesciunt. Consequatur, quis. Reprehenderit laboriosam beatae ut aperiam laudantium non numquam maxime quos itaque.</p>
+          <button class="bg-violet-600 h-8 w-26 text-[14px] mt-4 rounded-md">See more</button>
+        </div>
+      </div>
+
+      <div class="flex max-sm:flex-col items-center justify-evenly gap-3">
+        <div class="flex items-center">
+          <img class="max-w-80 max-md:w-70 max-sm:max-w-80 aspect-[3/2] object-cover rounded-xl" src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+        </div>
+      
+        <div class="max-w-160">
+          <h1 class="text-white/80 text-[28px] font-bold">
+            <span class="text-violet-500">Web</span> Development
+          </h1>
+          <p class="text-gray-400 text-[15px] text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere provident placeat quo earum voluptates dolores ipsum. Placeat hic animi, non pariatur optio dolorem tempora accusantium maiores. Quis numquam quasi velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sequi hic aspernatur eaque nostrum facere ex nesciunt. Consequatur, quis. Reprehenderit laboriosam beatae ut aperiam laudantium non numquam maxime quos itaque.</p>
+          <button class="bg-violet-600 h-8 w-26 text-[14px] mt-4 rounded-md">See more</button>
+        </div>
+      </div>
+
+      <div class="flex flex-row-reverse max-sm:flex-col items-center justify-evenly gap-3">
+        <div class="flex items-center">
+          <img class="max-w-80 max-md:w-70 max-sm:max-w-80 aspect-[3/2] object-cover rounded-xl" src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+        </div>
+      
+        <div class="max-w-160">
+          <h1 class="text-white/80 text-[28px] font-bold">
+            <span class="text-violet-500">Web</span> Development
+          </h1>
+          <p class="text-gray-400 text-[15px] text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere provident placeat quo earum voluptates dolores ipsum. Placeat hic animi, non pariatur optio dolorem tempora accusantium maiores. Quis numquam quasi velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sequi hic aspernatur eaque nostrum facere ex nesciunt. Consequatur, quis. Reprehenderit laboriosam beatae ut aperiam laudantium non numquam maxime quos itaque.</p>
+          <button class="bg-violet-600 h-8 w-26 text-[14px] mt-4 rounded-md">See more</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
 
   <!-- js -->
   <script>
@@ -64,7 +194,6 @@
     sideBarBtn.addEventListener("click", () => {
       sideBar.classList.toggle("hidden");
     })
-
   </script>
 </body>
 </html>
