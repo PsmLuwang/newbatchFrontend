@@ -6,6 +6,19 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   <title>Document</title>
+
+  <style>
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+  </style>
 </head>
 
 <body class="bg-slate-800">
@@ -182,7 +195,46 @@
   </section>
 
 
+  <!-- Client review section -->
+  <section class="h-200">
+    <div class="flex justify-evenly p-4 gap-3 my-10 py-16 bg-linear-to-l from-violet-500/15 to-violet-700/70">
+      <div>
+        <p class="text-white/80 text-[14px] text-justify mt-4 max-w-100">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsam blanditiis qui non fuga tempora velit veniam aliquid repellendus ea. Nesciunt unde quas fugiat voluptates id blanditiis optio eum quia.
+          Officiis rem. Similique laboriosam aliquid aut doloremque iusto. Nobis earum doloribus tempora voluptatem numquam officiis.
+        </p>
+      </div>
+      
+      <div class="text-right">
+        <h1 class="text-white/80 font-semibold">Review</h1>
+        <h1 class="text-white/80 font-extrabold text-[36px]">What Our <br> <span class="text-violet-500"> Clients</span> Say</h1>
+      </div>
+    </div>
 
+    <div id="reviewContainer" class="flex gap-5 overflow-x-scroll no-scrollbar pt-10 px-5">
+      <!-- card -->
+      <div class="bg-slate-700 min-w-70 w-70 relative p-5 pt-20">
+        <div class="absolute -top-10 left-[50%] translate-x-[-50%] flex flex-col items-center gap-2">
+          <img class="h-20 w-20 rounded-full object-cover border-3 border-violet-600 p-0.5 bg-slate-800" src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+          <div class="text-yellow-500 text-[12px]">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-3">
+          <p class="text-slate-400 text-[13px] text-center italic">
+            <span class="text-[16px] font-bold">"</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus quos modi, vel voluptatem rem libero nihil commodi at asperiores? Deleniti quo non libero repudiandae expedita dignissimos voluptatum rem tempora consequuntur.<span class="text-[16px] font-bold">"</span>
+          </p>
+          <h1 class="font-semibold text-slate-300 text-center pt-2 border-t-2 border-slate-400 mx-5">JANE DOE</h1>
+        </div>
+      </div>
+     
+    </div>
+  </section>
 
 
 
@@ -194,6 +246,33 @@
     sideBarBtn.addEventListener("click", () => {
       sideBar.classList.toggle("hidden");
     })
+
+
+    const reviewContainer = document.getElementById("reviewContainer");
+    for (let i = 0; i < 10; i++) {
+      reviewContainer.innerHTML += `
+        <!-- card -->
+        <div class="bg-slate-700 min-w-70 w-70 relative p-5 pt-20">
+          <div class="absolute -top-10 left-[50%] translate-x-[-50%] flex flex-col items-center gap-2">
+            <img class="h-20 w-20 rounded-full object-cover border-3 border-violet-600 p-0.5 bg-slate-800" src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+            <div class="text-yellow-500 text-[12px]">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <p class="text-slate-400 text-[13px] text-center italic">
+              <span class="text-[16px] font-bold">"</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus quos modi, vel voluptatem rem libero nihil commodi at asperiores? Deleniti quo non libero repudiandae expedita dignissimos voluptatum rem tempora consequuntur.<span class="text-[16px] font-bold">"</span>
+            </p>
+            <h1 class="font-semibold text-slate-300 text-center pt-2 border-t-2 border-slate-400 mx-5">JANE DOE</h1>
+          </div>
+        </div>
+      `;
+    }
   </script>
 </body>
 </html>
