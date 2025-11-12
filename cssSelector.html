@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      padding-bottom: 600px;
+    }
+
+    /* * {
+      color: rgb(170, 9, 234);
+    } */
+    h2 {
+      color: blue;
+    }
+    button {
+      background-color: orange;
+    }
+    .classSelector {
+      color: green;
+    }
+    #idSelector {
+      color: red;
+    }
+    /* ///////// */
+
+    .descendantSelector {
+      background-color: rgb(244, 195, 195);
+    }
+    /* .descendantSelector h1 {
+      color: green;
+    } */
+
+     /* Child Selector */
+    .descendantSelector > h1 {
+      color: green;
+    }
+    /* General Sibling Selector */
+    .sibling ~ h1 {
+      color: red;
+    }
+    /* Adjacent Sibling Selector  */
+    .sibling + h1 {
+      color: blue;
+    }
+
+    /* ///// */
+    /* Attribute Selectors */
+    input[type="number"] {
+      background-color: red;
+    }
+    .btnHover:hover {
+      background-color: green;
+    }
+
+
+    /* ////// */
+    /* .Nchild > h1:nth-child(even) {
+      color: red;
+    } */
+    /* .Nchild > h1:first-child {
+      color: red;
+    } */
+    /* .Nchild > h1:last-child {
+      color: red;
+    } */
+    /* .Nchild > h1:nth-child(5) {
+      color: red;
+    } */
+    .Nchild > h1:nth-child(3n + 1) {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Selector</h1>
+  
+  <h1 class="classSelector">Class Selector</h1>
+  <h1 class="classSelector">Class Selector</h1>
+  
+  <h1 id="idSelector">ID Selector</h1>
+  
+  <h2 class="classSelector">Type Selector</h2>
+  <h2>Type Selector</h2>
+  <button>Type Selector</button>
+  <button>Type Selector</button>
+  
+  <h1>Universal Selector</h1>
+  <h1>Universal Selector</h1>
+  
+  <div class="descendantSelector">
+    <div style="background-color: rgb(213, 213, 213);">
+      <h1>g2 Descendant Selector h1</h1>
+      <h3>g2 Descendant Selector h3</h3>
+      <h1>g2 Descendant Selector h1</h1>
+    </div>
+    <h1>Test</h1>
+    <h3 class="sibling">Descendant Selector h3</h3>
+    <h1>Descendant Selector h1</h1>
+    <h1>Descendant Selector h1</h1>
+  </div>
+
+  <input type="number" placeholder="text">
+  <input type="password" placeholder="password">
+  <input type="email" placeholder="email">
+
+  <button class="btnHover">Hover me</button>
+
+  <section class="Nchild">
+    <h1>Child 1</h1>
+    <h1>Child 2</h1>
+    <h1>Child 3</h1>
+    <h1>Child 4</h1>
+    <h1>Child 5</h1>
+    <h1>Child 6</h1>
+  </section>
+
+</body>
+</html>
