@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <style>
+    .hoverCard {
+      transition: all 2s;
+    }
+    .hoverCard:hover {
+      translate: 0px -12px;
+    }
+  </style>
+
+</head>
+<body class="flex justify-center items-center h-[100dvh]">
+
+  <div class="-rotate-[calc(360*1deg)] scale-[0.8] hover:scale-[1.2] hover:rotate-0 w-90 rounded-xl overflow-hidden shadow-md hover:shadow-xl border border-slate-300 hoverCard">
+    <div class="bg-sky-500 dark:bg-slate-700 h-36 w-full"></div>
+
+    <div class="bg-sky-100 p-6 pt-16 relative">
+      <div class="h-28 w-28 bg-slate-800 rounded-full border-6 border-sky-50 absolute top-0 translate-y-[-50%]"></div>
+      <button class="bg-slate-800 rounded-lg h-9 w-28 text-white/80 font-semibold text-[14px] absolute top-0 translate-y-[-50%] right-6">Follow</button>
+
+      <h1 class="font-bold text-[20px]">Name Here</h1>
+      <p class="text-gray-600 font-semibold -mt-1">@namehere</p>
+      <p class="font-semibold mt-5 text-sm/5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima doloremque obcaecati dictai.</p>
+    </div>
+  </div>
+
+</body>
+</html>
